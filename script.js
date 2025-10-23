@@ -6,8 +6,8 @@ buttonElement.addEventListener("click",function(){
 	event.preventDefault();
 	const fontSizeValue=fontSizeInput.value;
 	const fontColorValue=fontColorInput.value;
-	document.cookie(`fontsize=${fontSizeValue}px`)
-	document.cookie(`fontcolor=${fontColorValue}`)
+	document.cookie=`fontsize=${fontSizeValue}px`
+	document.cookie=`fontcolor=${fontColorValue}`
 	 document.documentElement.style.setProperty("--fontsize", fontSizeValue + "px");
   document.documentElement.style.setProperty("--fontcolor", fontColorValue);
 
