@@ -12,16 +12,3 @@ buttonElement.addEventListener("click",function(){
   document.documentElement.style.setProperty("--fontcolor", fontColorValue);
 
 	})
-window.addEventListener("load", () => {
-  const savedFontSize = getCookie("fontsize");
-  const savedFontColor = getCookie("fontcolor");
-
-  if (savedFontSize) {
-    document.documentElement.style.setProperty("--fontsize", savedFontSize);
-    fontSizeInput.value = parseInt(savedFontSize); // remove px for input
-  }
-  if (savedFontColor) {
-    document.documentElement.style.setProperty("--fontcolor", savedFontColor);
-    fontColorInput.value = savedFontColor;
-  }
-});
